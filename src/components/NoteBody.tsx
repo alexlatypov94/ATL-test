@@ -24,8 +24,6 @@ export const NoteBody: React.FC<NoteBodyProps> = React.memo(
     const dispatch = useAppDispatch();
     const { notes } = useAppSelector(noteSelector);
 
-    console.log('render body');
-
     const handleSelectNote = useCallback(
       (id: string) => () => {
         const isAlreadySelected = id === notes.find((el) => el.isSelected)?.id;

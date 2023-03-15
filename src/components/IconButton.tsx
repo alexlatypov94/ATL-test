@@ -8,7 +8,6 @@ interface IconButtonProps {
 
 export const IconButton: React.FC<IconButtonProps> = React.memo(
   ({ onClick, children }: IconButtonProps) => {
-    console.log('render icon button');
     return <IconButtonMui onClick={onClick}>{children}</IconButtonMui>;
   }
 );

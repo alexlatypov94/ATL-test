@@ -18,7 +18,6 @@ interface NoteTabProps {
 
 export const NoteTab: React.FC<NoteTabProps> = React.memo(
   ({ id, date, description, isSelected, onSelectNote }: NoteTabProps) => {
-    console.log('render NoteTab');
     const { firstLine, secondLine } = getFirstAndSecondLines(description);
     return (
       <NoteTabContainer id={id} $isSelected={isSelected} onClick={onSelectNote}>
